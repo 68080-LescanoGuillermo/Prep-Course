@@ -12,6 +12,7 @@ function obtenerMayor(x, y) {
     return y;
   }
 
+
 }
 
 function mayoriaDeEdad(edad) {
@@ -257,7 +258,7 @@ function doWhile(numero) {
   }
   while(i<8);
   return suma
-
+  
 
 }
 

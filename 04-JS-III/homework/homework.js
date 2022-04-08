@@ -26,6 +26,7 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+
   var newArray = [];
   for(let i = 0 ; i < array.length; i++){
     newArray.push(array[i] + 1);
@@ -40,7 +41,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // y devuelve el array
   // Tu código:
 
-  array[array.length] = elemento;
+  //array[array.length] = elemento;
+  //return array;
+  array.push(elemento)
   return array;
 }
 
@@ -135,6 +138,15 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
 
+  //var comp = 0;
+  //for ( var i = 0; i < numeros.length; i++){
+  //  if(numeros[i] > comp){
+  //    comp = numeros[i];
+  //  }
+  //}
+  //return comp;
+
+
   var num = numeros[0]; //el numero mas grande es el primero por ahora
   for(let i = 0 ; i< numeros.length ; i++){
     if(numeros[i] > num){
@@ -151,6 +163,9 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+
+
+
 if (arguments.length < 1 ){
   return 0;
   }
@@ -166,6 +181,8 @@ return mult;
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+
+
   var sum = 0;
   for ( let i = 0; i<arreglo.length; i++){
     if(arreglo[i] > 18){
@@ -181,6 +198,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
+
+
+
   if(numeroDeDia == 1 || numeroDeDia == 7){
     return "Es fin de semana";
   }
@@ -208,7 +228,9 @@ function empiezaConNueve(n) {
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
-  //Escribe tu código aquí  
+  //Escribe tu código aquí 
+  
+  
   let comp = 0;
   for ( let i = 0; i<arreglo.length - 1; i++){
     if(arreglo[i] !== arreglo[i+1]){
@@ -225,6 +247,7 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+
 
 let newArray = [];
 for(let i=0 ; i<array.length;i++){
@@ -247,6 +270,7 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+
   let nuevoArray = [];
   for(let i = 0; i<array.length;i++){
     if(array[i] > 100){
@@ -265,6 +289,7 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+
 
   var array=[];
   var suma = numero 
